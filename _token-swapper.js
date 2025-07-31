@@ -4,8 +4,8 @@
 //If present, the global variable is updated.
 
 var Pattern = Java.type("java.util.regex.Pattern");
-
 var tokenPattern = Pattern.compile('<input[^>]+name="_token"[^>]+value="([^"]+)"');
+var URLEncoder = Java.type("java.net.URLEncoder");
 
 if (typeof global === 'undefined') {
     global = {};
